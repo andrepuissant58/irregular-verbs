@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Jeu des verbes irréguliers</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎓 Jeu des verbes irréguliers</h1>
+    <p>Devine le <strong>simple past</strong> et le <strong>past participle</strong> du verbe :</p>
+    <p id="timer">⏱️ Temps restant : 30s</p>
+<button id="pauseBtn" onclick="togglePause()">⏸️ Pause</button>
+
+    <h2 id="verb">to go</h2>
+
+    <input type="text" id="past" placeholder="Simple Past">
+    <input type="text" id="participle" placeholder="Past Participle">
+    <button onclick="checkAnswer()">Valider</button>
+
+    <p id="feedback"></p>
+    <p id="hint"></p>
+    <p id="score">💰 Pièces : 0</p>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
